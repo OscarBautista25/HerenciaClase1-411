@@ -22,8 +22,8 @@ public class CuentaAhorros extends CuentaBancaria{
     }
 
     public void calcularExtractoMensual(){
-        if (numeroRetiros>4) {
-            comisionMensual = comisionMensual + (numeroRetiros-4)*1000;
+        if (numeroRetiros>1) {
+            comisionMensual = comisionMensual + (numeroRetiros-1)*1000;
             super.calcularExtractoMensual();
         }
         if (saldo<10000) {
